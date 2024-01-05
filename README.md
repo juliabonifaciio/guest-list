@@ -1,15 +1,15 @@
 # Website Template: Exploring the Magical World of Harry Potter
 DevLinks Website Template inspired by Harry Potter. Created based on the Rocketseat course and further enhanced by me.
 
-![Website Template](.github/img.png)
+![Website Template](.github/preview.png)
 
   ##
   
 ## Overview
-Projeto simples utilizando React Native com o Expo e TypesScript para cadastrar os convidados do seu evento.
+A simple project utilizing React Native with Expo and TypeScript to manage and register guests for your event.
 
 ## How to View
-Abra o arquivo pelo `Expo Go` no seu smartphone.
+Open the file using Expo Go on your smartphone.
 
 ## Technologies Used
 - `React Native e Expo`
