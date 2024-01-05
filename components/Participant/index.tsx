@@ -2,14 +2,12 @@ import { View, Text, TouchableOpacity} from 'react-native';
 
 import { styles } from './styles';
 
-// Typar uma função
 type Props = {
     name: string;
     onRemove: () => void;
 }
 
 export function Participant({name, onRemove}: Props) {
-
     return (
         <View style={styles.container}>
             <Text style={styles.name}>
@@ -23,7 +21,6 @@ export function Participant({name, onRemove}: Props) {
                         - 
                     </Text>
             </TouchableOpacity>
-
         </View>
-    )
+    );
 }
