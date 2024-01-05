@@ -7,29 +7,23 @@ import { Participant } from '../../../components/Participant';
 import { styles } from './styles';
 
 export default function Home(){
-
     const [participants, setParticipants] = useState <string[]>([]);
     const [participantName, setParticipantName] = useState ('');
 
-   
-    // Função para adicionar participante
     function handleParticipantAdd() {
         if (participants.includes(participantName)) {
             return Alert.alert('Convidado(a) existente...', 'Já existe um(a) convidado(a) com esse nome na lista.');
         }
-
         setParticipants(prevState => [...prevState, participantName]);
         setParticipantName('');
     }
 
-    // Função para remover participante
     function handleParticipantRemove(name: string){
         Alert.alert('Remover participante...', `Deseja mesmo realizar a remoção do(a) convidado(a) ${name}?`, [
             {
                 text: 'Sim',
                 onPress: () => setParticipants(prevState => prevState.filter(participant => participant !== name))
             },
-
             {
                 text: 'Cancelar',
                 style: 'cancel'
@@ -39,7 +33,6 @@ export default function Home(){
 
     return (
         <View style={styles.container}>
-
             <Text style={styles.eventName}> 
                 Lista de Convidados 
             </Text>
@@ -68,9 +61,7 @@ export default function Home(){
 
             <FlatList
                 data={participants}  
-                
                 keyExtractor={item => item}
-
                 renderItem={({ item }) => (
                     <Participant 
                         key={item}
@@ -78,7 +69,6 @@ export default function Home(){
                         onRemove={() => handleParticipantRemove(item)}
                     />
                 )}
-
                 showsVerticalScrollIndicator={false}
 
                 ListEmptyComponent={() => (
