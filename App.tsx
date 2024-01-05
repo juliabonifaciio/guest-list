@@ -10,7 +10,6 @@ export default function App(){
         backgroundColor="transparent"
         translucent={true}
       />
-
       <Home/>
     </>
   );
