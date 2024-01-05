@@ -1,3 +1,39 @@
+# Website Template: Exploring the Magical World of Harry Potter
+DevLinks Website Template inspired by Harry Potter. Created based on the Rocketseat course and further enhanced by me.
+
+![Website Template](.github/img.png)
+
+  ##
+  
+## Overview
+Projeto simples utilizando React Native com o Expo e TypesScript para cadastrar os convidados do seu evento.
+
+## How to View
+Abra o arquivo pelo `Expo Go` no seu smartphone.
+
+## Technologies Used
+- `React Native e Expo`
+- `TypesScript`
+- `Git e Github`
+
+## File Structure
+App.tsx
+index.tsx
+style.ts
+
+# License
+This project is licensed under the MIT License.
+
+# Contributions
+Contributions are always welcome! You're invited to submit any improvements or corrections.
+
+# Credits
+Crafted with care by Julia Faria, supported by Rocketseat.
+
+
+
+
+
 # Guest List
 
 Aplicativo onde é possível "cadastrar" os convidados de um determinado evento.
